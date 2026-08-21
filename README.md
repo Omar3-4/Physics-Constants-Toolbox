@@ -127,6 +127,9 @@ a0 = phys.calc('4 * pi * eps0 * hbar^2 / (me * e^2)');
 % Example 3: Using your own variables
 m = 5; 
 E = phys.calc('m * c^2'); 
+
+% Example 4: Complex expressions mixed with MATLAB code
+result = (4 * phys.calc('eps0*me*c/e^2') * (0.2-log(0.95)/0.2)) / 7.5e-6;
 ```
 
 ### Example — Photon energy
