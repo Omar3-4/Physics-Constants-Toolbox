@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<productinfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.mathworks.com/namespace/info/v1/info.xsd">
-    <matlabrelease>R2018a</matlabrelease>
-    <name>Physical Constants Toolbox</name>
-    <type>toolbox</type>
-    <icon></icon>
-    <help_location>./</help_location>
-</productinfo>
