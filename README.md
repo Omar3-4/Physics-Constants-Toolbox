@@ -112,7 +112,25 @@ help phys.hbar
 help phys.list
 ```
 
+### Advanced Calculations (Evaluating Expressions)
+
+If you need to perform calculations with multiple constants, you don't have to write `phys.` before each one. Use `phys.calc()` to evaluate mathematical expressions seamlessly. It automatically resolves physical constants and can even use variables from your workspace!
+
+```matlab
+% Example 1: Calculate energy directly
+E = phys.calc('h * c / 500e-9');
+
+% Example 2: Bohr radius (mixing constants and workspace variables)
+pi_val = pi; % MATLAB built-in
+a0 = phys.calc('4 * pi * eps0 * hbar^2 / (me * e^2)');
+
+% Example 3: Using your own variables
+m = 5; 
+E = phys.calc('m * c^2'); 
+```
+
 ### Example — Photon energy
+
 
 ```matlab
 lambda = 550e-9;                            % 550 nm (green light)
