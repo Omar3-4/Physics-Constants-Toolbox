@@ -15,7 +15,16 @@ All values are in **SI units** and follow **CODATA 2018** recommended values.
 
 ## Installation
 
-### Step 1 — Find your MATLAB path
+### Installation via .mltbx (Recommended)
+
+1. Go to the [Releases](https://github.com/YOUR_USERNAME/Physics-Constants-Toolbox/releases) page.
+2. Download `PhysicalConstantsToolbox.mltbx`.
+3. Double-click the downloaded `.mltbx` file directly in MATLAB (or from your OS file explorer) for a one-click installation.
+4. The toolbox and documentation will automatically be integrated into MATLAB.
+
+### Manual Installation
+
+#### Step 1 — Find your MATLAB path
 
 Open MATLAB and run:
 
