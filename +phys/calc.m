@@ -40,12 +40,14 @@ end
 words = regexp(expr, '[a-zA-Z_]\w*', 'match');
 words = unique(words);
 
+% Get the directory of the +phys package dynamically
+phys_dir = fileparts(mfilename('fullpath'));
+
 % Replace physical constant names with 'phys.name'
 for i = 1:numel(words)
     w = words{i};
-    % Check if the word is a function inside the +phys package
-    % Using exist with 'file' is the best way to check package functions
-    if exist(['phys.', w], 'file') == 2
+    % Check if the word is a function inside the +phys package directory
+    if exist(fullfile(phys_dir, [w, '.m']), 'file') == 2
         % Replace only whole words to avoid replacing parts of other names
         expr = regexprep(expr, ['\<', w, '\>'], ['phys.', w]);
     end
